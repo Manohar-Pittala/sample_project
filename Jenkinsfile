@@ -8,5 +8,14 @@ pipeline {
         }
      }
   }
+  stage (build){
+     steps{
+       script{
+         sh ""
+         mvn install
+         ""
+        }
+     }
+  }
 }
 }
